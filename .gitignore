@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# Python virtual environment
+venv/
+
+# Bytecode files
+__pycache__/
+*.py[cod]
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# VS Code settings (optional)
+.vscode/
