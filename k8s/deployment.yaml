@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-api
-        image: prabhnoor/flask-k8s-app:latest  #  Now pulling from Docker Hub
-        imagePullPolicy: Always                #  Always pull latest from registry
+        image: prabnoor/flask-k8s-app:latest
+        imagePullPolicy: Always 
         ports:
         - containerPort: 5000
