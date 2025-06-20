@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app-deployment
+  name: my-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flask-app
+      app: my-api
   template:
     metadata:
       labels:
-        app: flask-app
+        app: my-api
     spec:
       containers:
-        - name: flask-app
-          image: flask-k8s-app:latest
-          imagePullPolicy: Never   
-          ports:
-            - containerPort: 5000
+      - name: my-api
+        image: prabhnoor/flask-k8s-app:latest  #  Now pulling from Docker Hub
+        imagePullPolicy: Always                #  Always pull latest from registry
+        ports:
+        - containerPort: 5000
