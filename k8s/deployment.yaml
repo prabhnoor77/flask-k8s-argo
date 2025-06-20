@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-api
-        image: prabnoor/flask-k8s-app:v2
+        image: prabnoor/flask-k8s-app:v3
         imagePullPolicy: Always 
         ports:
         - containerPort: 5000
